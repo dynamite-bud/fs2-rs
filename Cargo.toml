@@ -14,7 +14,7 @@ travis-ci = { repository = "danburkert/fs2-rs" }
 appveyor = { repository = "danburkert/fs2-rs" }
 
 [target.'cfg(unix)'.dependencies]
-libc = { git = "https://github.com/john-sharratt/libc.git" }
+libc = { git = "https://github.com/dynamite-bud/libc.git" }
 
 
 [target.'cfg(windows)'.dependencies]
