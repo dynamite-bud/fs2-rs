@@ -17,6 +17,11 @@ mod windows;
 #[cfg(windows)]
 use windows as sys;
 
+#[cfg(target_vendor = "wasmer")]
+mod wasix;
+#[cfg(target_vendor = "wasmer")]
+use wasix as sys;
+
 use std::fs::File;
 use std::io::{Error, Result};
 use std::path::Path;
